@@ -1,5 +1,6 @@
+
 /*
- *    Copyright (c) The League of Amazing Programmers 2013-2017
+ *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
  */
 
@@ -12,21 +13,18 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class DuelingButtons implements ActionListener {
-	
-	public static void main(String[] args) {
-		new DuelingButtons().createUI();
-	}
 
 	JButton leftButton = new JButton();
 	JButton rightButton = new JButton();
-	
-	Dimension BIG = new Dimension(400,400);
-	Dimension SMALL = new Dimension(200,200);
-	
+
+	Dimension BIG = new Dimension(400, 400);
+	Dimension SMALL = new Dimension(200, 200);
+
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 
-	private void createUI() {
+	public void run() {
+
 		// 1. Add the panel to the frame
 
 		// 2. Make the frame visible
@@ -52,20 +50,15 @@ public class DuelingButtons implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		JButton buttonPressed = (JButton) arg0.getSource();
-		
-		
-		/* If the buttonPressed was the leftButton....*/
-			// Set the text of the rightButton to "No, click Me!"
-			// Set the PREFERRED size of the rightButton to BIG
-			// Set the text of the leftButton to "Click Me!"
-			// Set the PREFERRED size of the leftButton to SMALL
-		
-		
+
+		/* If the buttonPressed was the leftButton.... */
+		// Set the text of the rightButton to "No, click Me!"
+		// Set the PREFERRED size of the rightButton to BIG
+		// Set the text of the leftButton to "Click Me!"
+		// Set the PREFERRED size of the leftButton to SMALL
+
 		/* If the buttonPressed was the rightButton, do the opposite. */
-		
 
 		frame.pack();
 	}
 }
-
-
