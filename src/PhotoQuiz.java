@@ -1,8 +1,7 @@
 /*
- *    Copyright (c) The League of Amazing Programmers 2013-2017
+ *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
  */
-
 
 import java.awt.Component;
 import java.net.MalformedURLException;
@@ -16,12 +15,16 @@ import javax.swing.JOptionPane;
 
 public class PhotoQuiz {
 
-	public static void main(String[] args) throws Exception {
+	public void run() throws Exception {
+
 		JFrame quizWindow = new JFrame();
 		quizWindow.setVisible(true);
-                quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   // This will make sure the program exits when you close the window
+		// This will make sure the program exits when you close the window
+		quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		// 1. find an image on the internet, and put its URL in a String variable (from your browser, right click on the image, and select “Copy Image Address”)
+		// 1. find an image on the internet, and put its URL in a String
+		// variable (from your browser, right click on the image, and select
+		// “Copy Image Address”)
 
 		// 2. create a variable of type "Component" that will hold your image
 
@@ -37,9 +40,11 @@ public class PhotoQuiz {
 
 		// 8. print "INCORRECT" if the answer is wrong
 
-		// 9. remove the component from the quiz window (you may not see the effect of this until step 12)
+		// 9. remove the component from the quiz window (you may not see the
+		// effect of this until step 12)
 
-		// 10. find another image and create it (might take more than one line of code)
+		// 10. find another image and create it (might take more than one line
+		// of code)
 
 		// 11. add the second image to the quiz window
 
@@ -51,7 +56,7 @@ public class PhotoQuiz {
 
 	}
 
-	private static Component createImage(String imageUrl) throws MalformedURLException {
+	private Component createImage(String imageUrl) throws MalformedURLException {
 		URL url = new URL(imageUrl);
 		Icon icon = new ImageIcon(url);
 		JLabel imageLabel = new JLabel(icon);
@@ -60,10 +65,6 @@ public class PhotoQuiz {
 
 	/* OPTIONAL */
 	// *14. add scoring to your quiz
-	// *15. make something happen when mouse enters image (imageComponent.addMouseMotionListener()) 
+	// *15. make something happen when mouse enters image
+	// (imageComponent.addMouseMotionListener())
 }
-
-
-
-
-
