@@ -52,7 +52,7 @@ public class BodyPartQuiz {
 
 		// 1. Make an int variable to hold the score.
 
-		// 2. Set the size of the window in the initializeGui() method below
+		// 2. Set the size of the window in the initializeGui() method 
 
 		// 4. Ask the user who this person is and store their answer
 		String guess = JOptionPane.showInputDialog("who is this?");
