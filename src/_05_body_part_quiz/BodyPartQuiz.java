@@ -17,9 +17,9 @@ import javax.swing.JPanel;
 
 public class BodyPartQuiz {
 
-	// You can use the celebrity photos we have placed in the default java
+	// You can use the celebrity photos we have placed in the recipe java
 	// package,or if you prefer, get celebrity photos from the Internet,
-	// place them in the default package, and change the names below.
+	// place them in the recipe package(body_part_quiz), and change the names below.
 
 	String firstImage = "src/_05_body_part_quiz/arnold.jpeg";
 	String secondImage = "src/_05_body_part_quiz/leonardo.jpeg";

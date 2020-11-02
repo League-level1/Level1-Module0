@@ -38,7 +38,7 @@ public class DrumKit implements MouseListener {
 		// 6. Add the panel to the frame. (The panel is invisible.)
 
 		// 7. Download an image of a drum from the Internet. Drop it into your
-		// Eclipse project under "default package".
+		// Eclipse project under "recipe package(drum_kit)".
 
 		// 8. Put the name of your image file in a String variable.
 
@@ -67,7 +67,7 @@ public class DrumKit implements MouseListener {
 														// that the mouse
 														// clicked on
 
-		// 15. Download a drum sound and drop it into your "default package".
+		// 15. Download a drum sound and drop it into your "recipe package(drum_kit)".
 		// You can find it on freesound.org. To download it, log in as
 		// leagueofamazing/code4life.
 
