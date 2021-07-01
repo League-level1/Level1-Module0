@@ -1,7 +1,7 @@
-package _02_gui_with_help._5_duelling_buttons;
+package _06_duelling_buttons;
 
 /*
- *    Copyright (c) The League of Amazing Programmers 2013-2021
+ *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
  */
 
@@ -13,7 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class DuellingButtons implements ActionListener {
+public class DuelingButtons implements ActionListener {
 
 	JButton leftButton = new JButton();
 	JButton rightButton = new JButton();
@@ -58,10 +58,6 @@ public class DuellingButtons implements ActionListener {
 		// Set the text of the leftButton to "Click Me!"
 		// Set the PREFERRED size of the leftButton to SMALL
 
-		
-		
-		
-		
 		/* If the buttonPressed was the rightButton, do the opposite. */
 
 		frame.pack();
