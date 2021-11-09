@@ -1,7 +1,7 @@
-package _05_body_part_quiz;
+package _02_gui_with_help._4_body_part_quiz;
 
 /*
- *    Copyright (c) The League of Amazing Programmers 2013-2019
+ *    Copyright (c) The League of Amazing Programmers 2013-2021
  *    Level 1
  */
 
@@ -101,7 +101,7 @@ public class BodyPartQuiz {
 	private JLabel getNextImage() {
 		if (imageIterator.hasNext())
 			return imageIterator.next();
-		System.exit(0);
-		return new JLabel();
+
+		return new JLabel("No more images");
 	}
 }

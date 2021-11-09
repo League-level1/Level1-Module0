@@ -1,6 +1,6 @@
-package _03_photo_quiz;
+package _02_gui_with_help._2_photo_quiz;
 /*
- *    Copyright (c) The League of Amazing Programmers 2013-2019
+ *    Copyright (c) The League of Amazing Programmers 2013-2021
  *    Level 1
  */
 
@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
 
 public class PhotoQuiz {
 
-	public void run() throws Exception {
+	public void run() {
 
 		JFrame quizWindow = new JFrame();
 		quizWindow.setVisible(true);
@@ -25,7 +25,7 @@ public class PhotoQuiz {
 
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
-		// “Copy Image Address”)
+		// “Copy Image Address” )
 
 		// 2. create a variable of type "Component" that will hold your image
 
@@ -57,10 +57,18 @@ public class PhotoQuiz {
 
 	}
 
-	private Component createImage(String imageUrl) throws MalformedURLException {
-		URL url = new URL(imageUrl);
-		Icon icon = new ImageIcon(url);
-		JLabel imageLabel = new JLabel(icon);
+	private Component createImage(String imageUrl) {
+		JLabel imageLabel = new JLabel();
+		URL url;
+		try {
+			url = new URL(imageUrl);
+			Icon icon = new ImageIcon(url);
+			imageLabel.setIcon(icon);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			JOptionPane.showMessageDialog(null, "I can't find your image!!");
+		}
+		
 		return imageLabel;
 	}
 
